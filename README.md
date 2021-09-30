@@ -26,9 +26,9 @@ Declare: **OtsThreadPool.RunTime**
 ```pascal
 TaskManagerThread().NewTask(  //
     @OnExecuteThread,         // Tarefa a ser executada
-    @OnTerminateThread,       // Quando terminar, execute esse método, caso contrário use **nil**
-    'Tarefa id 001',          // Identificação da tarefa, pode ser recuperada no **OnTerminateThread**
-    True,                     // Remove esta tarefa da lista ao iniciar? Padrão **TRUE**, se for **FALSE**, a tarefa é eterna
+    @OnTerminateThread,       // Quando terminar, execute esse método, caso contrário use nil
+    'Tarefa id 001',          // Identificação da tarefa, pode ser recuperada em OnTerminateThread
+    True,                     // Remove esta tarefa da lista ao iniciar? Padrão TRUE se for FALSE a tarefa é eterna
     TThreadPriority.tpHighest // Prioridade da Thread
    );
 
