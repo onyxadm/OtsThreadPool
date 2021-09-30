@@ -4,7 +4,7 @@ OtsThreadPool :: Execução de tarefas em multi-threads - Delphi
 
 Exemplo de uso:
 ```pascal
-procedure OnExecuteThreadFiles(Sender: TObject);
+procedure OnExecuteThread(Sender: TObject);
 begin
   // Faça algo
 end;
@@ -25,7 +25,7 @@ end;
 Declare: **OtsThreadPool.RunTime**
 ```pascal
 TaskManagerThread().NewTask(  //
-    @OnExecuteThreadFiles,    // Tarefa a ser executada
+    @OnExecuteThread,         // Tarefa a ser executada
     @OnTerminateThread,       // Quando terminar, execute esse método, caso contrário use **nil**
     'Tarefa id 001',          // Identificação da tarefa, pode ser recuperada no **OnTerminateThread**
     True,                     // Remove esta tarefa da lista ao iniciar? Padrão **TRUE**, se for **FALSE**, a tarefa é eterna
