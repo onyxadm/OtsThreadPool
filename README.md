@@ -2,10 +2,12 @@
 OtsThreadPool :: Execução de tarefas em multi-threads - Delphi 10.3.3
 
 
-Método de instalação
-1- Clique em: **Component » Install Packages » Add**;
-2- Selecione o arquivo: **OtsThreadPool.bpl**;
+Método de instalação:
+```pascal
+1- Clique em: Component » Install Packages » Add
+2- Selecione o arquivo: OtsThreadPool.bpl
 Pronto!
+```
 
 Exemplo de uso:
 ```pascal
