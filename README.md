@@ -34,3 +34,9 @@ TaskManagerThread().NewTask(  //
 
 TaskManagerThread().ThreadCount := 1; // Pra iniciar precisa acrescentar o nº. de threads que deseja;
 ```
+
+Encerrar as tarefas por demanda
+```pascal
+TaskManagerThread().Clear;
+TaskManagerThread().ThreadCount := 0;
+```
